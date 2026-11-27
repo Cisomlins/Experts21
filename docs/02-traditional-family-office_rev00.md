@@ -141,7 +141,7 @@ Lesson: family offices with long horizons lean into illiquid private assets, whi
 ## 9. Lessons an AI version should copy
 
 1. **Start with an IPS.** Only 35% of offices have one [5]; the AI office should require one before giving allocation advice.
-2. **Institutional governance.** Mirror an investment committee: one agent proposes, another challenges, the principal approves, and all is minuted.
+2. **Institutional governance.** Mirror an investment committee: one agent proposes, another challenges, the principal approves, and all is minuted. Family offices that use AI keep final investment decisions with experienced humans [9].
 3. **Consolidated reporting first.** Manual processes and spreadsheets are the top operational risk [4]; reliable reporting is the foundation.
 4. **Cost discipline.** Track all-in costs in bps, because investment costs are usually more than half of total spend [8].
 5. **Coordinate, don't replace, specialists.** No office does everything in-house [8]; the AI office prepares briefs for lawyers, accountants and managers.
