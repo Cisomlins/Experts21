@@ -233,7 +233,7 @@ Date; question; options considered; recommendation; principal's decision and rea
 15. Gao, Jiang, Yan, Detecting Lookahead Bias in LLM Forecasts, arXiv, 2025, https://arxiv.org/abs/2512.23847 (accessed 2026-11-27)
 16. Islam et al., FinanceBench: A New Benchmark for Financial Question Answering, Patronus AI / arXiv, 2023, https://arxiv.org/abs/2311.11944 (accessed 2026-11-27)
 17. Lewis et al., Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks, NeurIPS, 2020, https://arxiv.org/abs/2005.11401 (accessed 2026-11-27)
-18. Morgan Stanley customer story, OpenAI, 2024, https://openai.com/index/morgan-stanley/ (accessed 2026-11-27)
+18. Morgan Stanley customer story, OpenAI, n.d. (2023–2024), https://openai.com/index/morgan-stanley/ (accessed 2026-11-27)
 19. Morgan Stanley debuts an AI assistant to answer common investing and personal finance queries, Fortune, 2023, https://fortune.com/2023/09/20/morgan-stanley-ai-assistant-answer-investing-personal-finance-queries/ (accessed 2026-11-27)
 20. How JPMorganChase democratized employee access to gen AI, American Banker, 2025, https://www.americanbanker.com/news/how-jpmorganchase-democratized-employee-access-to-gen-ai (accessed 2026-11-27)
 21. Goldman Sachs launches internal AI assistant firmwide, Fortune, 2025, https://fortune.com/2025/06/24/goldman-sachs-internal-ai-assistant/ (accessed 2026-11-27)

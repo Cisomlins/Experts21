@@ -4,7 +4,7 @@
 
 ## Summary
 
-- A human family office is organized around investment management, risk, tax/legal/estate, reporting and administration; the AI team mirrors this with 19 agent roles grouped into five layers: coordination, investment, risk and challenge, advisory (tax/legal/governance), and operations.
+- A human family office is organized around investment management, risk, tax/legal/estate, reporting and administration; the AI team mirrors this with 21 agent roles grouped into five layers: coordination, investment, risk and challenge, advisory (tax/legal/governance), and operations.
 - Each role card below is derived from professional bodies of knowledge: CFA Program (investment analysis and portfolio management) [1], CAIA (alternatives: real assets, private equity, private debt, hedge funds, digital assets) [2], FRM (market, credit, operational, liquidity risk) [3], CFP Board topics (tax, retirement, estate, insurance) [4], and Brazil's ANBIMA and Planejar certifications [5][6][7].
 - Brazil's certification system changed in 2026: CPA-10, CPA-20 and CEA were replaced by CPA, C-Pro R and C-Pro I; CGA (fund managers) and CGE (structured-fund managers) remain [5][8]. Role cards reference the current names.
 - Every agent shares common guardrails: cite sources, use tools for numbers, state confidence, flag jurisdiction (BR/US), and never execute transactions.
@@ -23,7 +23,7 @@ Large single-family offices typically split staff between investment (CIO, analy
 | Investment | Portfolio managers / analysts | Asset-class specialists (7), Quant/Portfolio Construction |
 | Research | Economist, strategist | Macro Economist; Geopolitical & Political Analyst |
 | Risk & challenge | CRO / risk manager; investment committee skeptic | Risk Officer; Devil's Advocate / Red Team |
-| Advisory | Tax advisors (BR/US), lawyers, estate planner | Tax Specialist BR; Tax Specialist US; Legal/Structuring & Estate |
+| Advisory | Compliance/regulatory counsel, tax advisors (BR/US), lawyers, estate planner | Regulatory & Tax Specialist BR; Regulatory & Tax Specialist US; Legal/Structuring & Estate |
 | Advisory | Governance / stewardship analyst, due diligence firm | Corporate Governance & Management Analyst; Due Diligence / Forensic Accounting |
 | Operations | Controller, reporting | Reporting & Accounting |
 | Operations | Data / IT | Data Engineer / Librarian |
@@ -112,18 +112,18 @@ Common to all: **Mission** is to generate and maintain theses in their asset cla
 - **KPIs:** Brier score; lead time of alerts.
 - **Guardrails:** Neutral, non-partisan language; separate facts from forecasts; cite sources with dates.
 
-### 8. Tax Specialist — Brazil
-- **Mission:** Estimate tax effects of decisions for a Brazilian tax resident with foreign assets.
-- **Skills:** Brazilian income tax on investments, foreign-asset reporting, fund taxation, monthly equity gains rules, annual DIRPF filing logic; interaction with the US.
+### 8. Regulatory and Tax Specialist — Brazil
+- **Mission:** Estimate tax effects of decisions for a Brazilian tax resident with foreign assets, and track regulatory rules that affect the principal's investments.
+- **Skills:** Brazilian income tax on investments, foreign-asset reporting, fund taxation, monthly equity gains rules, annual DIRPF filing logic; interaction with the US. Regulatory: CVM rules on funds and securities advisers (e.g., Resolução CVM 19 for consultants [6]), ANBIMA self-regulation [5], Banco Central rules on FX and capital abroad.
 - **Inputs:** Statements, cost basis, entity structure, proposed transactions.
 - **Outputs:** Tax impact estimates per memo, tax calendar, questions for the principal's accountant.
 - **Tools/data:** Tax calculators, official Receita Federal guidance (retrieved, dated).
 - **KPIs:** Estimate accuracy vs final filings; deadlines met.
 - **Guardrails:** Estimates only; filings and opinions by a licensed accountant/lawyer; always cite the rule version and date because tax law changes.
 
-### 9. Tax Specialist — United States
-- **Mission:** Estimate US tax consequences, including residency status questions for someone with US ties.
-- **Skills:** Tax planning topics in the CFP body of knowledge (14% of the exam) [4]; US residency tests for non-citizens, withholding on US-source income, estate tax exposure for non-residents, foreign-account reporting; treaty considerations.
+### 9. Regulatory and Tax Specialist — United States
+- **Mission:** Estimate US tax consequences, including residency status questions for someone with US ties, and track US regulation affecting the principal's accounts and investments.
+- **Skills:** Tax planning topics in the CFP body of knowledge (14% of the exam) [4]; US residency tests for non-citizens, withholding on US-source income, estate tax exposure for non-residents, foreign-account reporting; treaty considerations. Regulatory: SEC and FINRA rules relevant to retail and accredited investors, account and product eligibility for non-residents. **Assumption:** these topics need dedicated research files before this agent is built.
 - **Inputs, outputs, tools:** As for the Brazil tax role, with IRS guidance.
 - **KPIs, guardrails:** As above; must flag cross-border double-taxation issues to both tax agents.
 
@@ -195,7 +195,7 @@ Common to all: **Mission** is to generate and maintain theses in their asset cla
 | CGA, CGE | ANBIMA | CGA: managers of fixed income, equity, multimarket and FX funds; CGE: managers of structured funds (FIIs, FIPs, FIDCs) [5][8] |
 | CVM consultant authorization | CVM (Resolução CVM 19) | Securities consultants need a degree, clean reputation and an approved certification exam [6]; CVM has accepted CEA and CGA, and ANBIMA reports C-Pro R and C-Pro I are now accepted [18] |
 
-**Assumption:** CVM and ANBIMA rules continue to evolve; the Regulatory agent must re-verify certification and licensing requirements before relying on them.
+**Assumption:** CVM and ANBIMA rules continue to evolve; the Regulatory and Tax agents must re-verify certification and licensing requirements before relying on them.
 
 ## MVP: which roles to build first
 
@@ -212,7 +212,7 @@ Common to all: **Mission** is to generate and maintain theses in their asset cla
 
 **Optional 7th:** a combined Fixed Income and FX specialist, because Brazilian CDI/Tesouro instruments and BRL/USD exposure are likely the largest decisions for a Brazil-based investor with US expenses. **Assumption:** this reflects a typical Brazilian portfolio; confirm with the principal's actual holdings.
 
-**Phase 2:** Equities, Tax BR, Tax US, Geopolitical/Political, Governance/CEO. **Phase 3:** Real estate, PE/VC, Commodities, Crypto, Legal/Estate, Due Diligence, Quant.
+**Phase 2:** Equities, Regulatory & Tax BR, Regulatory & Tax US, Geopolitical/Political, Governance/CEO. **Phase 3:** Real estate, PE/VC, Commodities, Crypto, Legal/Estate, Due Diligence, Quant.
 
 ## Implications for the agent team
 
