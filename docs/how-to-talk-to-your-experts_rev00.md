@@ -85,4 +85,32 @@ Fictional facts: one operating company in Brazil distributing about R$2 million 
 
 ## 6. Test run (Example 1)
 
-*Pending: filled in from a real run of Example 1 through the orchestrator on 2026-11-28.*
+Run on 2026-11-28 by calling `orchestrator` as a subagent from a Claude Code cloud session, using the Example 1 prompt.
+
+**What worked**
+- The orchestrator chose the expected experts: macro, FX, Brazil tax, US tax, risk, red team and CIO.
+- It returned one combined memo in the standard format: answer first, a key-numbers table, reasoning by expert, dissent, open questions, next steps with owners, sources, and a decision-journal entry.
+- It used the docs correctly. It cited the macro snapshot (file 08), the tax rules (file 10) and the stress set (file 07), and it flagged one claim as **Unverified** because it was not in the research base.
+- It stayed within its decision rights. It labelled the result a **draft, not a recommendation**, because no real Risk Officer sign-off or Red Team review had taken place.
+- Its hand calculations were re-checked with Python afterwards and are correct:
+  - the carry cost of about R$164k a year
+  - the break-even of about 9.3% a year of BRL depreciation
+  - the extra cost of about R$776k if the real falls 30%
+
+**What did not work (known issue)**
+- **The orchestrator could not launch the other experts.** When it runs as a subagent of the main session, it was not given the `Agent` tool at run time, even though its file lists it. It therefore wrote each expert's view itself and disclosed this at the top of its answer.
+- **It had no code tool**, so it did the arithmetic by hand, which breaks the `tool-based-numbers` skill.
+- **Work-around until fixed:** run the orchestrator as the *main* agent of a session, so it can call the experts itself:
+
+  ```bash
+  claude --agent orchestrator
+  ```
+
+  Or ask the experts one by one (`@agent-macro-economist …`, then `@agent-risk-officer …`) and finish with `@agent-chief-investment-officer` to combine them.
+
+**Excerpt of the answer** (fictional example investor; research and education, not advice):
+> **Answer:** Mostly yes, but as a currency match for known US dollar spending, not to earn more. Move about 18–20% (about R$1.8–2.0 million) in 3–4 tranches over 6–12 months into a 1–4 year Treasury ladder that matches the US$600,000 of planned spending, holding the bonds directly rather than through a US-listed ETF. If the real stays stable, the move costs about R$164,000 a year after tax; think of that as an insurance premium against the real falling.
+>
+> **Dissent (red team):** the cost is certain and the protection is not (CDI wins in about 80% of the macro scenarios). Start smaller: move 10% now to cover 3 years, then fund each year's need about 12 months ahead. **Not resolved:** 10% vs. 20%.
+>
+> **Open questions:** no Investment Policy Statement yet; where the existing ETFs are domiciled (this decides US estate-tax exposure above US$60,000); the actual dates of the USD needs.
