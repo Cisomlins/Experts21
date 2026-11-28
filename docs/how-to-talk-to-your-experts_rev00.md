@@ -108,6 +108,11 @@ Run on 2026-11-28 by calling `orchestrator` as a subagent from a Claude Code clo
 
   Or ask the experts one by one (`@agent-macro-economist …`, then `@agent-risk-officer …`) and finish with `@agent-chief-investment-officer` to combine them.
 
+**Retest after a fix (same day).** The orchestrator was changed to match the course tutorial: it now has no `tools:` line, so it inherits all tools, and it has a written fallback for when it cannot call experts. It was then re-run in the same session.
+- It reported `Read, Grep, Glob, Write, Edit`: the *old* tool list without `Agent`. This suggests the session was still using the cached definition, and that subagents in this cloud session are not given the `Agent` tool.
+- It again disclosed that no experts ran, labelled each section as written by the orchestrator, and kept the memo a draft.
+- **Status:** unconfirmed until tested in a **new** Claude Code session, which loads the updated file.
+
 **Excerpt of the answer** (fictional example investor; research and education, not advice):
 > **Answer:** Mostly yes, but as a currency match for known US dollar spending, not to earn more. Move about 18–20% (about R$1.8–2.0 million) in 3–4 tranches over 6–12 months into a 1–4 year Treasury ladder that matches the US$600,000 of planned spending, holding the bonds directly rather than through a US-listed ETF. If the real stays stable, the move costs about R$164,000 a year after tax; think of that as an insurance premium against the real falling.
 >
