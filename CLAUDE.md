@@ -142,6 +142,10 @@ Each skill is written once and preloaded into every agent that lists it in its `
 
 `docs/README.md` indexes 13 research files plus the roster. Agents read the files listed in their "Read first" section. Dated snapshots (macro and geopolitics, as of 2026-11-27) must be refreshed before use.
 
+## Decision journal (`journal/`)
+
+One file per recommendation or decision (`YYYY-MM-DD-<topic>_rev00.md`), saved only when the principal asks, using the template and index in `journal/README.md`. Entries are reviewed and scored on their review date. Fictional investor only.
+
 ## Conventions
 
 - **Docs versioning:** never overwrite a doc. Save a new `_revNN` file and update `docs/README.md` to point to it.

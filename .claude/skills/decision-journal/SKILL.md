@@ -11,8 +11,11 @@ description: "Log each decision with rationale, probabilities, dissent and kill 
 ## Entry (file 03, Decision journal)
 Date; question; options considered; recommendation; principal's decision and reasoning; probabilities for key outcomes; expected value; key assumptions; kill criteria; information available at the time; dissent; review date; later: outcome, Brier score, lessons.
 
+## Location
+`journal/YYYY-MM-DD-<short-topic>_rev00.md`, using the template in `journal/README.md`, and add the entry to the index there. Never overwrite an entry: updates and outcomes go in `_rev01`, `_rev02` and so on.
+
 ## Procedure
-1. Write the entry when the recommendation is delivered.
+1. Draft the entry when the recommendation is delivered. Save it only when the principal asks.
 2. Set a review date.
 3. At review: record outcome, score forecasts, compare with a passive benchmark and with "do nothing" (file 13 §6.3).
 4. Attribute: which agent, data and model produced it.

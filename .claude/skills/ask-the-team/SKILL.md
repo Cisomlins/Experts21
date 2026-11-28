@@ -60,4 +60,4 @@ Return the CIO's memo, followed by:
 - **Process notes:** anything that failed or was filled in.
 - **Decision needed from the principal**, and the questions for licensed professionals.
 
-Do not save a decision-journal entry unless the user asks. In this public repo, entries may only use the fictional investor.
+Offer to save a decision-journal entry. Save it only if the user asks, in `journal/` with the template in `journal/README.md` (skill `decision-journal`). In this public repo, entries may only use the fictional investor.
