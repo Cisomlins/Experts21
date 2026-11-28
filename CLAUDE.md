@@ -1,6 +1,6 @@
 # Experts21: AI Family Office agent team
 
-This project is a team of **31 Claude Code subagents**, **28 shared skills** and the **`/ask-the-team`** team-run skill that act as a personal family office for one principal. The team analyzes what, where and when to invest, measures risk, and answers questions on the economy, geopolitics, politics, regulation, tax (Brazil and US) and company management. It is an academic project (FAU, "Build a team of synthetic employees with Claude Code") and is published publicly on GitHub and Netlify.
+This project is a team of **31 Claude Code subagents**, **28 shared skills** and the **`/ask-the-team`** team-run skill. Each agent has its own model, a name and personality, and a `knowledge/<agent-name>/` folder. Together they act as a personal family office for one principal. The team analyzes what, where and when to invest, measures risk, and answers questions on the economy, geopolitics, politics, regulation, tax (Brazil and US) and company management. It is an academic project (FAU, "Build a team of synthetic employees with Claude Code") and is published publicly on GitHub and Netlify.
 
 ## Rule 1: this repository is public
 
@@ -150,5 +150,6 @@ One file per recommendation or decision (`YYYY-MM-DD-<topic>_rev00.md`), saved o
 
 - **Docs versioning:** never overwrite a doc. Save a new `_revNN` file and update `docs/README.md` to point to it.
 - **Agent and skill files** in `.claude/` are edited in place (git history keeps old versions). `agent-builder` records each team change in a new roster revision.
-- **Models:** agents inherit the session model for now; per-agent models are set in a later step.
+- **Brains and personalities:** each agent's `model:` (9 opus, 20 sonnet, 2 haiku), first name, voice and working style are listed with reasons in `docs/agent-brains_rev00.md`. Personality changes tone, never accuracy, and every agent signs its answers (e.g., `— Helena, Risk Officer`).
+- **Knowledge folders:** every agent reads `knowledge/<agent-name>/` before answering. Only public or fictional documents go there. `knowledge/*/private/` is ignored by git, for real documents in a private copy only.
 - Agent formats follow https://code.claude.com/docs/en/sub-agents and https://code.claude.com/docs/en/skills.

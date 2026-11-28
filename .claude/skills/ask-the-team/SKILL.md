@@ -56,7 +56,7 @@ Send everything to `chief-investment-officer` to write the memo (skill `memo-wri
 
 ### 6. Deliver
 Return the CIO's memo, followed by:
-- **Experts consulted:** each agent name, the wave it ran in, and a one-line finding.
+- **Experts consulted:** each expert by first name and agent (for example "Helena (`risk-officer`)"), the wave it ran in, and a one-line finding. Names are in `docs/agent-brains_rev00.md`.
 - **Process notes:** anything that failed or was filled in.
 - **Decision needed from the principal**, and the questions for licensed professionals.
 
