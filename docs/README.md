@@ -32,7 +32,7 @@
 
 **Team design:** [expert-roster_rev01.md](expert-roster_rev01.md) lists the 22 agents that run the office (A01–A22, adding an Operating Businesses Analyst to file 04's 21) and the 8 experts needed to build it (B01–B08). Each has a one-line job, a priority, the docs it must read and its decision rights. It also defines 28 shared skills with a skill-by-agent mapping; 16 of them cover the 6-agent MVP.
 
-**Using the team:** [how-to-talk-to-your-experts_rev00.md](how-to-talk-to-your-experts_rev00.md) shows how to ask one expert or the whole team, with four example prompts and a real test run of the orchestrator.
+**Using the team:** [how-to-talk-to-your-experts_rev01.md](how-to-talk-to-your-experts_rev01.md) shows how to ask one expert or the whole team, with four example prompts and the test runs (`/ask-the-team` runs the experts as separate agents).
 
 ## Points that apply across files
 

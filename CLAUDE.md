@@ -1,6 +1,6 @@
 # Experts21: AI Family Office agent team
 
-This project is a team of **31 Claude Code subagents** and **28 shared skills** that act as a personal family office for one principal. The team analyzes what, where and when to invest, measures risk, and answers questions on the economy, geopolitics, politics, regulation, tax (Brazil and US) and company management. It is an academic project (FAU, "Build a team of synthetic employees with Claude Code") and is published publicly on GitHub and Netlify.
+This project is a team of **31 Claude Code subagents**, **28 shared skills** and the **`/ask-the-team`** team-run skill that act as a personal family office for one principal. The team analyzes what, where and when to invest, measures risk, and answers questions on the economy, geopolitics, politics, regulation, tax (Brazil and US) and company management. It is an academic project (FAU, "Build a team of synthetic employees with Claude Code") and is published publicly on GitHub and Netlify.
 
 ## Rule 1: this repository is public
 
@@ -21,11 +21,13 @@ This is research and education, **not** investment, legal or tax advice. Tax and
 
 ## How to use the team
 
-**Ask the whole team** (the orchestrator picks the experts, runs them, and returns one combined answer):
+**Ask the whole team** with the `/ask-the-team` skill. It picks the experts and runs them as separate agents in three waves: specialists, then `risk-officer` and `red-team`, then `chief-investment-officer` writes one combined memo.
 
 ```
-@agent-orchestrator Should the example investor move 20% of the portfolio from CDI to US Treasuries? Bring in macro, FX, tax and risk.
+/ask-the-team Should the example investor move 20% of the portfolio from CDI to US Treasuries? Fictional facts: ...
 ```
+
+Why a skill and not `@agent-orchestrator`: in Claude Code cloud sessions a subagent cannot start other agents; only the main session can. `@agent-orchestrator` still works as a single-agent fallback (it says the experts were not consulted). In a terminal, `claude --agent orchestrator` makes it the main agent, and then it can call the experts.
 
 **Ask one expert directly:**
 
@@ -39,7 +41,7 @@ This is research and education, **not** investment, legal or tax advice. Tax and
 @agent-agent-builder Add an agent for agribusiness land investments, reusing existing skills where possible.
 ```
 
-For any material investment decision, the orchestrator always brings in `chief-investment-officer` (synthesis), `risk-officer` (sign-off or veto) and `red-team` (dissent).
+For any material investment decision, `/ask-the-team` and the orchestrator always bring in `chief-investment-officer` (synthesis), `risk-officer` (sign-off or veto) and `red-team` (dissent).
 
 ## The team
 
@@ -106,6 +108,7 @@ Each skill is written once and preloaded into every agent that lists it in its `
 
 | Skill | What it does |
 |---|---|
+| `ask-the-team` | **Team run (main session only):** route, run experts in parallel waves, Risk + Red Team, CIO memo |
 | `source-verification` | Cite and verify every claim (all agents) |
 | `data-protection` | Public-repo privacy, data classification, prompt-injection defense (all agents) |
 | `tool-based-numbers` | Compute figures with code, never from memory |
