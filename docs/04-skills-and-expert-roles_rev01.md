@@ -2,6 +2,8 @@
 
 > **Purpose:** Map human family office roles to AI agent roles, with mission, skills, inputs, outputs, tools, KPIs and guardrails, and recommend an MVP build order. **Primary users:** the human developer writing agent definitions, the Chief of Staff/Orchestrator (routing), and every specialist agent (its own role card).
 
+> **Privacy edit (rev01, 2026-11-28):** the "principal" in this file is a **fictional example investor**: a Brazil-resident investor with US assets who owns operating businesses. Hospitality and energy are used only as illustrative sectors. No real person's data is in this public repository. Content is otherwise unchanged from the previous revision.
+
 ## Summary
 
 - A human family office is organized around investment management, risk, tax/legal/estate, reporting and administration; the AI team mirrors this with 21 agent roles grouped into five layers: coordination, investment, risk and challenge, advisory (tax/legal/governance), and operations.
@@ -69,7 +71,7 @@ Common to all: **Mission** is to generate and maintain theses in their asset cla
 |---|---|---|---|
 | **Public equities (BR + US)** | Financial statement analysis, valuation (DCF, multiples), industry analysis, earnings quality; B3 and US market structure | SEC EDGAR and CVM filings, earnings transcripts, price and estimate data, valuation calculator | CFA equity and financial statement analysis topics [1] |
 | **Fixed income and rates** | Yield curves, duration and convexity, credit spreads; Brazil: Selic, CDI (interbank rate most Brazilian fixed income is benchmarked against), Tesouro Direto bonds (Tesouro Selic floating, Prefixado fixed, IPCA+ inflation-linked, plus RendA+ and Educa+) [15]; bank CDBs, LCI/LCA, debentures; US Treasuries, TIPS, municipals, corporates | Curves (DI futures, US Treasuries), Tesouro Direto prices, bond calculator, rating data | CFA fixed income [1]; FRM valuation and credit risk [3] |
-| **Real estate** | Cash-flow underwriting, cap rates, leverage, local market analysis (Brazil and Florida/US), REITs and Brazilian FIIs (listed real estate funds) | Property data, rent comps, loan calculator, FII/REIT filings | CAIA real assets / real estate [2] |
+| **Real estate** | Cash-flow underwriting, cap rates, leverage, local market analysis (Brazil and the US), REITs and Brazilian FIIs (listed real estate funds) | Property data, rent comps, loan calculator, FII/REIT filings | CAIA real assets / real estate [2] |
 | **Private equity / VC** | Fund due diligence, J-curve, vintage diversification, valuation of private companies, terms (fees, carry, governance); Brazilian FIPs | Fund documents, capital-call schedules, benchmark data | CAIA private equity (VC, growth, buyouts) and private debt [2] |
 | **Commodities / energy** | Supply-demand, futures curves (contango, backwardation), Brazil's commodity export exposure (agriculture, iron ore, oil) | Futures data, inventory and production reports | CAIA real assets / commodities [2] |
 | **Crypto / digital assets** | Blockchain basics, custody risk, token economics, regulation in BR and US, ETF and fund wrappers | Exchange and on-chain data, custody documentation | CAIA digital assets [2] |

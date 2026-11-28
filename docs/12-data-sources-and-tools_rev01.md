@@ -2,6 +2,8 @@
 
 > **Purpose:** A catalog of data sources, analytics tools and AI connectors for Brazil and the US, with cost tiers, API availability, a lean starter stack and an upgrade path. **Primary users:** the data-engineering agent, research/market agents, macro and geopolitics agents, regulatory-watch agent, portfolio and risk agents, and the orchestrator when budgeting tools.
 
+> **Privacy edit (rev01, 2026-11-28):** the "principal" in this file is a **fictional example investor**: a Brazil-resident investor with US assets who owns operating businesses. Hospitality and energy are used only as illustrative sectors. No real person's data is in this public repository. Content is otherwise unchanged from the previous revision.
+
 ## Summary
 
 - Most of what a single-family office needs for macro, filings and regulation is **free and official**: SEC EDGAR, FRED, the BCB's SGS and Olinda APIs (including the Focus survey), IBGE, Ipeadata, CVM open data and the Federal Register API [16][17][18][19][20][21][22][23][30].
@@ -105,9 +107,9 @@ Alternative data means non-traditional signals (web traffic, card spending, sate
 |---|---|---|---|
 | Social/news sentiment | Finnhub social sentiment [14] | Low | US-focused |
 | Event data | GDELT [24], ACLED [25] | Free | Good for geopolitics |
-| Search trends, job postings, app data | Demand signals for hospitality and energy | Free to institutional | **Assumption:** vendor landscape not verified in this round; evaluate case by case |
+| Search trends, job postings, app data | Demand signals for the operating businesses' sectors (e.g., hospitality, energy) | Free to institutional | **Assumption:** vendor landscape not verified in this round; evaluate case by case |
 
-**Assumption:** for a single family office, alternative data is a "Could." The principal's own operating businesses (occupancy, energy volumes) are a better proprietary signal than purchased datasets.
+**Assumption:** for a single family office, alternative data is a "Could." The principal's own operating businesses (e.g., occupancy, volumes) are a better proprietary signal than purchased datasets.
 
 ## 9. Private markets data
 

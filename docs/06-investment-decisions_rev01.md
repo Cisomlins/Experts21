@@ -2,6 +2,8 @@
 
 > **Purpose:** Give the agent team one shared, evidence-based method for deciding what to buy, in which jurisdiction and wrapper, and when, for a Brazil-based principal with US ties. **Primary users:** Chief Investment Officer agent, Asset Allocation agent, Brazil Markets agent, US Markets agent, Alternatives agent, Tax and Structuring agent, Risk agent (see file 07), and the Decision Review ("red team") agent.
 
+> **Privacy edit (rev01, 2026-11-28):** the "principal" in this file is a **fictional example investor**: a Brazil-resident investor with US assets who owns operating businesses. Hospitality and energy are used only as illustrative sectors. No real person's data is in this public repository. Content is otherwise unchanged from the previous revision.
+
 > **Disclaimer:** This document is research and education, not personalized investment, tax or legal advice. Any action should be confirmed with licensed professionals in Brazil and the US.
 
 ## Summary
@@ -82,17 +84,17 @@ Investor protections differ: US bank deposits are FDIC-insured up to USD 250,000
 |---|---|---|---|---|
 | Private equity | Higher than public equity hoped | High, hidden by smooth appraisals | 7–12 year lock-ups (**Estimate**) | Fees and manager dispersion are large |
 | Venture capital | Very high dispersion; most funds lag | Very high | 10+ years (**Estimate**) | Returns concentrated in a few managers |
-| Real estate (direct) | Income + inflation link | Moderate-high; concentrated | Low | Overlaps with hospitality business exposure |
+| Real estate (direct) | Income + inflation link | Moderate-high; concentrated | Low | May overlap with operating-business exposure (e.g., a hospitality business) |
 | Private credit | Income above public bonds | Credit and liquidity risk | Low | Defaults appear late in cycles |
 | Commodities / gold | Inflation and crisis hedge | High volatility | High via ETFs | No cash flow; long flat periods |
 | Crypto | Speculative | Extreme; custody and fraud risk | High but 24/7 crashes | Taxed as a foreign financial asset under Law 14,754 when held abroad [14] |
 
-**Assumption:** because the principal already owns operating businesses in hospitality and energy, direct real estate and energy assets add *more of the same* risk; the team should prefer alternatives that diversify away from them.
+**Assumption:** if the principal already owns operating businesses in asset-heavy sectors (e.g., hospitality or energy), direct real estate and energy assets add *more of the same* risk; the team should prefer alternatives that diversify away from them.
 
 ## 4. WHERE: jurisdiction, wrapper and custody
 
 - **Onshore vs. offshore.** Since 1 January 2024, Law 14,754/2023 taxes financial investments held abroad by Brazilian-resident individuals at a flat **15%**, assessed annually in the tax return, and ended tax deferral for many controlled offshore companies [14][15]. Offshore is no longer mainly a tax deferral play; it is a diversification, currency and asset-protection decision.
-- **US estate tax for non-US persons.** Nonresident aliens may owe US estate tax on US-situs assets (such as US stocks) above USD 60,000 [23]. **Assumption:** whether the principal counts as a US resident for tax purposes (given study in Florida) is an open question for the Tax agent; it changes this answer completely.
+- **US estate tax for non-US persons.** Nonresident aliens may owe US estate tax on US-situs assets (such as US stocks) above USD 60,000 [23]. **Assumption:** whether the principal counts as a US resident for tax purposes (given any time spent in the US) is an open question for the Tax agent; it changes this answer completely.
 - **Custody.** Split assets across institutions to stay within FGC/FDIC/SIPC limits [13][24][25]; prefer segregated custody at large, regulated custodians; keep a documented list of accounts and access for succession.
 - **Vehicle choice** (direct holdings, Brazilian funds, BDRs, US brokerage, offshore company, trust) must be decided by the Tax and Structuring agent before execution.
 

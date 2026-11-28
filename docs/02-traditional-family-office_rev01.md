@@ -2,6 +2,8 @@
 
 > **Purpose:** Explain how human family offices are defined, organized, governed, staffed, priced and regulated in Brazil and the USA, and which practices an AI Family Office should copy. **Primary users:** the Orchestrator/Chief of Staff agent, the CIO agent, the Risk agent, the Regulation/Tax agent, the Wealth Planning/Succession agent, and the Reporting agent.
 
+> **Privacy edit (rev01, 2026-11-28):** the "principal" in this file is a **fictional example investor**: a Brazil-resident investor with US assets who owns operating businesses. Hospitality and energy are used only as illustrative sectors. No real person's data is in this public repository. Content is otherwise unchanged from the previous revision.
+
 ## Summary
 
 - A **family office** is a private organization that manages the wealth and affairs of a wealthy family. A **single-family office (SFO)** serves one family; a **multi-family office (MFO)** serves several families; a **virtual family office** coordinates outside specialists with a very small in-house team.
@@ -166,7 +168,7 @@ Lesson: family offices with long horizons lean into illiquid private assets, whi
 - **Assumption (verify):** exclusive fund definition under CVM Resolution 175 and professional-investor criteria; not confirmed from the regulation text in this research.
 - **Assumption (verify):** whether a Brazilian SFO managing only family assets needs CVM registration; Resolution 21 text reviewed here does not state an explicit exemption.
 - **Open:** state-level ITCMD rates and implementation of Complementary Law 227/2026 in the principal's state.
-- **Open:** Brazil-US tax treaty absence and US tax status of the principal (student visa vs. residency) need professional review. **Assumption:** there is no comprehensive Brazil-US income tax treaty; verify.
+- **Open:** Brazil-US tax treaty absence and US tax status of the principal (non-resident vs. resident) need professional review. **Assumption:** there is no comprehensive Brazil-US income tax treaty; verify.
 - **Open:** survey figures come from bank-client samples with different methodologies; treat as indicative.
 
 ## Sources

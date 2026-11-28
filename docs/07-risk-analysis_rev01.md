@@ -2,6 +2,8 @@
 
 > **Purpose:** Define how the agent team identifies, measures, limits, hedges and explains risk across the principal's whole balance sheet (liquid portfolio plus operating businesses) in Brazil and the US. **Primary users:** Risk agent (owner), CIO agent, Asset Allocation agent, Macro/Geopolitics agent, Tax and Structuring agent, Insurance and Asset Protection agent, and the Reporting agent that presents risk to the principal.
 
+> **Privacy edit (rev01, 2026-11-28):** the "principal" in this file is a **fictional example investor**: a Brazil-resident investor with US assets who owns operating businesses. Hospitality and energy are used only as illustrative sectors. No real person's data is in this public repository. Content is otherwise unchanged from the previous revision.
+
 > **Disclaimer:** This document is research and education, not personalized investment, insurance, tax or legal advice.
 
 ## Summary
@@ -29,12 +31,12 @@
 | Risk | Plain definition | Principal-specific angle |
 |---|---|---|
 | **Market** | Prices of stocks, bonds, property or commodities fall | Liquid portfolio plus value of the businesses |
-| **Concentration** | Too much in one asset, sector, country or person | Hospitality and energy businesses, Brazil, BRL; **Assumption:** these are likely the largest share of net worth |
+| **Concentration** | Too much in one asset, sector, country or person | Operating businesses (example sectors: hospitality, energy), Brazil, BRL; **Assumption:** these are likely the largest share of net worth |
 | **Liquidity** | Cannot sell quickly without a large price cut, or cannot meet cash needs | Businesses may need cash exactly when markets are stressed |
 | **Credit / counterparty** | A borrower, bank or broker fails to pay | Bank CDBs above FGC limits [15]; private credit; broker failure |
 | **Currency (FX)** | Exchange rate moves hurt you | BRL income vs. USD spending (studies, US ties) |
 | **Inflation** | Rising prices erode purchasing power | IPCA in Brazil; US CPI for USD spending |
-| **Interest rate** | Rate changes move bond prices and business financing costs | Selic held at 13.75% in Nov 2026 [14]; energy and hospitality are capital-intensive |
+| **Interest rate** | Rate changes move bond prices and business financing costs | Selic held at 13.75% in Nov 2026 [14]; operating businesses in capital-intensive sectors (e.g., energy, hospitality) are rate-sensitive |
 | **Political / sovereign** | Elections, fiscal crises or policy shifts hurt assets or the currency | Brazil's 2002 and 2015 episodes [10][8]; US policy shifts |
 | **Regulatory / tax** | Rule changes alter returns or legality | Offshore taxation under Law 14,754/2023 [16]; US estate tax for non-residents [17]; energy-sector regulation |
 | **Operational / fraud** | Errors, theft, poor controls, scams | Wire fraud, fake investment offers, weak custody |
@@ -79,13 +81,13 @@
 | **2020 COVID** | S&P 500 fell about 34% between 19 February and 23 March 2020 [21] | Fastest bear market; fast recovery after policy response |
 | **2022 inflation shock** | US stocks fell a little over 18% and the aggregate US bond market about 13%, a rare year when both fell double digits [12] | Bonds do not always hedge stocks when inflation drives rates up |
 
-**Standard stress set (Assumption):** the Risk agent should run, at least quarterly: (1) 2002-type Brazil political shock, (2) 2008-type global crisis, (3) 2015–16-type Brazil recession, (4) 2020-type sudden crash, (5) 2022-type inflation/rate shock, (6) a forward-looking combined scenario: Brazil fiscal stress + BRL −30% + a sector shock to hospitality or energy.
+**Standard stress set (Assumption):** the Risk agent should run, at least quarterly: (1) 2002-type Brazil political shock, (2) 2008-type global crisis, (3) 2015–16-type Brazil recession, (4) 2020-type sudden crash, (5) 2022-type inflation/rate shock, (6) a forward-looking combined scenario: Brazil fiscal stress + BRL −30% + a shock to the operating businesses' sector (e.g., hospitality or energy).
 
 ## 5. Concentration in the operating businesses
 
 - Measure **total-wealth risk**, not only the liquid portfolio. Estimate the value, debt and cash-flow sensitivity of each business.
-- **Assumption:** hospitality is sensitive to recessions, travel shocks (2020) and FX (inbound tourism); energy is sensitive to regulation, commodity prices and interest rates.
-- **Rule:** the liquid portfolio should be built to *offset* the businesses: lower weights in Brazilian real estate, hospitality and energy stocks; more global, USD and defensive assets; and a liquidity reserve sized to cover business stress needs (**Assumption:** e.g., 12–24 months of fixed costs and debt service).
+- **Assumption (example sectors):** hospitality is sensitive to recessions, travel shocks (2020) and FX (inbound tourism); energy is sensitive to regulation, commodity prices and interest rates.
+- **Rule:** the liquid portfolio should be built to *offset* the businesses: lower weights in stocks from the same sectors as the operating businesses; more global, USD and defensive assets; and a liquidity reserve sized to cover business stress needs (**Assumption:** e.g., 12–24 months of fixed costs and debt service).
 
 ## 6. Risk limits (illustrative; to be set in the IPS)
 
@@ -134,7 +136,7 @@ RISK DASHBOARD — <month> — values in BRL and USD
 ## 9. Insurance and asset protection
 
 - **Deposit and broker protection:** FGC (Brazil) R$250k per CPF per institution, up to R$1m per 4 years [15]; FDIC USD 250,000 per depositor per bank per ownership category [23]; SIPC up to USD 500,000 against broker failure, not market loss [24].
-- **Personal and business insurance (Assumption, to be reviewed by an insurance broker):** life and disability (key-person), D&O for company boards, property and business interruption for hotels and energy assets, liability umbrella, cyber insurance.
+- **Personal and business insurance (Assumption, to be reviewed by an insurance broker):** life and disability (key-person), D&O for company boards, property and business interruption for the operating businesses' assets, liability umbrella, cyber insurance.
 - **Estate and structure:** US-situs assets of non-residents may face US estate tax above USD 60,000 [17]; holding structures, wills and succession plans in both countries are an asset-protection priority for the Tax and Structuring agent.
 - **Fraud controls:** dual approval for wires, call-back verification on a known number, no investment decisions based on unsolicited messages, hardware security keys for financial accounts [18].
 
@@ -162,7 +164,7 @@ RISK DASHBOARD — <month> — values in BRL and USD
 - Model-risk controls apply to every agent; outputs without sources and dates are not decision-ready.
 
 ## Open questions and assumptions
-- Values, debt and cash-flow sensitivity of the hospitality and energy businesses are unknown; concentration analysis needs them.
+- Values, debt and cash-flow sensitivity of the operating businesses are unknown; concentration analysis needs them.
 - The principal's risk appetite (maximum acceptable loss in BRL/USD) and liquidity needs must be set in the IPS; all limits here are **Assumptions**.
 - US tax residency status affects estate-tax exposure and structuring.
 - Exact BRL/USD peak levels in 2002 and the EMBI spread peak were not verified from a primary source and are omitted.

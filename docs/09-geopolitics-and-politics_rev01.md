@@ -1,5 +1,7 @@
 # Geopolitics and Politics
-> **Purpose:** Give the agent team frameworks, a dated landscape, monitoring methods and templates for political and geopolitical risk analysis, focused on Brazil and the USA and then the world. **Primary users:** Geopolitical and Political Risk agent, Regulatory agent, Chief Economist / Macro agent, Risk Manager, Portfolio Strategist, and the Energy and Hospitality sector agents.
+> **Purpose:** Give the agent team frameworks, a dated landscape, monitoring methods and templates for political and geopolitical risk analysis, focused on Brazil and the USA and then the world. **Primary users:** Geopolitical and Political Risk agent, Regulatory agent, Chief Economist / Macro agent, Risk Manager, Portfolio Strategist, and the Operating Businesses agent.
+
+> **Privacy edit (rev01, 2026-11-28):** the "principal" in this file is a **fictional example investor**: a Brazil-resident investor with US assets who owns operating businesses. Hospitality and energy are used only as illustrative sectors. No real person's data is in this public repository. Content is otherwise unchanged from the previous revision.
 
 ## Summary
 - Political risk is analyzed as **likelihood × market impact × duration**. Established methods include Eurasia Group's annual Top Risks, BlackRock's Geopolitical Risk Dashboard (which scores risks by likelihood and market attention) and the Caldara–Iacoviello **GPR index**, which counts news articles about geopolitical tensions [1][2][3].
@@ -145,7 +147,7 @@ Scale 1 (low risk) – 5 (high risk); Trend: ↑ worsening / → stable / ↓ im
 
 Weights (default): equal; Portfolio Strategist may override.
 Market pricing check: CDS 5y, FX implied vol, sovereign spread — is risk priced?
-Implications for principal: energy | hospitality | portfolio
+Implications for principal: operating businesses (by sector) | portfolio
 Sources: numbered list
 ```
 
@@ -157,7 +159,7 @@ EVENT-IMPACT ASSESSMENT   Event: <name>   Date/time detected: <UTC>   Agent: <na
 3. Historical analogues + base rate of lasting market impact
 4. Scenarios (prob. sum 100%): escalation / contained / reversal — each with duration
 5. Market impact grid (by scenario): S&P 500, Ibovespa, UST 10y, DI, BRL, DXY, Brent, gold, sector names
-6. Principal impact: energy ops (fuel, power prices, supply), hospitality (bookings, FX, travel advisories), portfolio exposures
+6. Principal impact (example sectors): energy ops (fuel, power prices, supply), hospitality (bookings, FX, travel advisories), portfolio exposures
 7. Is it priced? (market move so far vs scenario-weighted fair impact)
 8. Recommended actions (for human review): hedge / monitor / no action
 9. Signposts & next review time
@@ -168,7 +170,7 @@ EVENT-IMPACT ASSESSMENT   Event: <name>   Date/time detected: <UTC>   Agent: <na
 ## Implications for the agent team
 - The Geopolitical agent maintains a living Top-10 risk register with likelihood, market attention and principal impact, modeled on BlackRock's dashboard [2], and reviews it weekly with the Macro agent.
 - Priority watch items now: **Hormuz/oil**, the **Trabuco fiscal package and the 2027 budget**, **US–Brazil Section 301 escalation**, **US–China truce expiry on 10 January 2027**, the **Fed under Warsh and the new Democratic Congress**, and **Russia–Ukraine talks**.
-- Translate every political call into P&L channels for energy (fuel, power regulation, oil prices) and hospitality (FX, tourist flows, travel safety).
+- Translate every political call into P&L channels for the operating businesses (examples: energy (fuel, power regulation, oil prices) and hospitality (FX, tourist flows, travel safety)).
 - Enforce the bias controls in section 4.2 on every political memo.
 - Escalate any event-impact assessment rated "High" to the principal within the same day.
 

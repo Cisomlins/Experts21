@@ -2,6 +2,8 @@
 
 > **Purpose:** An inventory of what the agent team must know about the principal, their balance sheet, documents, the outside world and past decisions, plus how to keep it current, structure it and protect it. **Primary users:** the orchestrator/chief-of-staff agent, portfolio and risk agents, tax and estate agents, the data-engineering agent, and any agent that writes recommendations.
 
+> **Privacy edit (rev01, 2026-11-28):** the "principal" in this file is a **fictional example investor**: a Brazil-resident investor with US assets who owns operating businesses. Hospitality and energy are used only as illustrative sectors. No real person's data is in this public repository. Content is otherwise unchanged from the previous revision.
+
 ## Summary
 
 - Advice is only as good as the context behind it. The agents need five layers of context: **the principal**, **the balance sheet**, **documents**, **external context** (markets, macro, news, regulation) and **operating memory** (decisions, outcomes, learned preferences).
@@ -53,7 +55,7 @@ Use a questionnaire that maps to both regulatory regimes, so agent outputs speak
 | Holdings at brokers and banks (BR and US), by security, quantity, price, currency | Must | Open Finance Brasil; Plaid/aggregator; broker statements | Daily (automated) / monthly (statements) | S3 |
 | Cost basis and tax lots (purchase date, price, fees) | Must | Broker tax-lot reports; Plaid holdings cost basis [8]; Brazilian broker "notas de corretagem" | On every trade | S3 |
 | Cash and deposits; FX positions | Must | Bank feeds | Daily | S3 |
-| Operating businesses (hospitality, energy): ownership %, valuation, EBITDA, debt, capex plans, dividends | Must | Management accounts; auditors; shareholder agreements | Monthly (management accounts), annually (valuation) | S3–S4 |
+| Operating businesses (any sector; examples here use hospitality and energy): ownership %, valuation, EBITDA, debt, capex plans, dividends | Must | Management accounts; auditors; shareholder agreements | Monthly (management accounts), annually (valuation) | S3–S4 |
 | Other private company stakes and funds (PE/VC commitments, capital calls, NAV) | Should | GP reports; capital-call notices | Quarterly | S3 |
 | Real estate: address class, value, rent, mortgage, expenses | Must | Appraisals; leases; tax assessments | Annually | S3 |
 | Debt: loans, guarantees given (often by the principal for operating businesses), covenants | Must | Loan agreements; bank statements | Monthly | S3 |
@@ -85,7 +87,7 @@ Use a questionnaire that maps to both regulatory regimes, so agent outputs speak
 | News and sentiment | Should | News APIs | Continuous | S1 |
 | Regulatory feeds (Federal Register, Diário Oficial, CVM, BCB, Receita Federal, energy and tourism regulators) | Must for sectors held | Official feeds | Daily | S1 |
 | Geopolitical risk indices | Should | GPR, EPU, GDELT, ACLED | Daily–monthly | S1 |
-| Sector data for hospitality and energy (occupancy, tariffs, auctions, power prices) | Should | Industry and regulator data | Monthly | S1 |
+| Sector data for the operating businesses' sectors (e.g., hospitality: occupancy; energy: tariffs, auctions, power prices) | Should | Industry and regulator data | Monthly | S1 |
 | Broker and independent research | Could | Subscriptions | As issued | S2 (licensed) |
 
 ### 1.6 Operating context (memory)
@@ -165,7 +167,7 @@ Based on the CFA Institute's elements for individual investors (scope and purpos
    - Liquidity: minimum cash reserve (months of spending), business support reserve
    - Taxes: residency, entity structure, tax-lot rules, treaty considerations
    - Legal/regulatory: product eligibility (e.g., qualified/professional investor status in Brazil; accredited investor status in the US)
-   - Unique circumstances: concentration in hospitality and energy; correlation of portfolio with operating businesses
+   - Unique circumstances: concentration in the operating businesses' sectors; correlation of portfolio with operating businesses
 7. **Currency policy:** target BRL/USD split and hedging rules.
 8. **Strategic asset allocation:** target weights and ranges by asset class and jurisdiction.
 9. **Rebalancing rules:** calendar and band triggers.
@@ -194,7 +196,7 @@ Based on the CFA Institute's elements for individual investors (scope and purpos
 - Exclusions: ... | Themes to favor: ...
 ## Family and succession (summary only; details in restricted store)
 ## Operating businesses (summary)
-- Hospitality: ... | Energy: ... | Personal guarantees: ...
+- Business 1 (sector): ... | Business 2 (sector): ... | Personal guarantees: ...
 ## Communication preferences
 - Language: ... | Detail level: ... | Alert thresholds: ...
 ## Hard rules for agents
@@ -206,7 +208,7 @@ Based on the CFA Institute's elements for individual investors (scope and purpos
 
 - The orchestrator must refuse to give allocation advice when Must items (goals, horizon, liquidity, risk profile, tax residency) are missing or stale, and should ask for them.
 - Every recommendation must state the IPS version and profile version it relied on, and be written to the decision journal.
-- Risk agents should treat the operating businesses as part of the portfolio: hospitality and energy exposure is already large before any listed investment.
+- Risk agents should treat the operating businesses as part of the portfolio: that sector exposure may already be large before any listed investment.
 - Tax agents must work at the tax-lot level and by entity; aggregated positions are not enough.
 - Data agents own freshness monitoring and reconciliation; other agents must show "as of" dates.
 - Access control is per agent: legal/estate agents see S4 documents; market agents never do.

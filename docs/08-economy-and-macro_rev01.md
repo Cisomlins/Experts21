@@ -1,5 +1,7 @@
 # Economy and Macro
-> **Purpose:** Give the agent team a shared framework, indicator set, dated snapshot and reporting routine for macroeconomic analysis of Brazil, the USA and the world. **Primary users:** Chief Economist / Macro agent, Portfolio Strategist, Risk Manager, Fixed Income and FX agents, and the Sector agents for energy and hospitality.
+> **Purpose:** Give the agent team a shared framework, indicator set, dated snapshot and reporting routine for macroeconomic analysis of Brazil, the USA and the world. **Primary users:** Chief Economist / Macro agent, Portfolio Strategist, Risk Manager, Fixed Income and FX agents, and the Operating Businesses agent.
+
+> **Privacy edit (rev01, 2026-11-28):** the "principal" in this file is a **fictional example investor**: a Brazil-resident investor with US assets who owns operating businesses. Hospitality and energy are used only as illustrative sectors. No real person's data is in this public repository. Content is otherwise unchanged from the previous revision.
 
 ## Summary
 - Macro analysis here rests on a few lenses: the **business cycle**, the **growth/inflation regime** (a four-quadrant map), **monetary policy** (Fed and the BCB's Copom), **fiscal sustainability**, the **yield curve and credit spreads**, the **dollar cycle**, **commodity cycles** and **China's pull on Brazil**.
@@ -7,7 +9,7 @@
 - **Brazil:** the Selic is 13.75% after five cuts. Copom paused on 4 November 2026 [9]. 12-month IPCA inflation is 4.63%, above the 4.5% tolerance ceiling [11]. Gross debt is 82.9% of GDP [14]. The real sold off after President Lula's re-election and then recovered to about R$5.51/US$ when Luiz Carlos Trabuco was named finance minister [15][16].
 - **Energy shock:** the 2026 Iran war and restrictions in the Strait of Hormuz pushed Brent to a 52-week high of about $126 in April. Brent was roughly $91–97 in late November [19][20]. Oil is the main global inflation swing factor right now.
 - Macro forecasting has a poor record. Economists missed most recessions, even late in the year they happened [24]. The team should express views as **probability-weighted scenarios with signposts**, not point forecasts.
-- Each week the team produces a **Weekly Macro Brief** (template below) that ties data surprises to asset prices and to the principal's energy and hospitality businesses.
+- Each week the team produces a **Weekly Macro Brief** (template below) that ties data surprises to asset prices and to the principal's operating businesses (illustrated here with energy and hospitality).
 
 ## 1. A framework for macro analysis
 
@@ -150,13 +152,13 @@ WEEKLY MACRO BRIEF — week ending <date>   Analyst agent: <name>   Confidence: 
 4. Markets: S&P 500, Ibovespa, UST 10y, DI Jan-27/Jan-33, BRL, DXY, Brent, iron ore, soy; weekly change + one-line driver
 5. Regime call: quadrant for US and Brazil; change vs last week (Y/N)
 6. Scenario table: probabilities and changes, with the signposts that moved
-7. Business lens: energy (fuel prices, power tariffs, bandeiras, reservoirs) and hospitality (FX, tourist arrivals, consumer credit)
+7. Business lens (example sectors): energy (fuel prices, power tariffs, bandeiras, reservoirs) and hospitality (FX, tourist arrivals, consumer credit)
 8. Portfolio implications (for Portfolio Strategist; not advice until reviewed)
 9. Next week calendar: dates/times (BRT and ET)
 10. Sources list
 ```
 
-## 7. Sector macro drivers for the principal's businesses
+## 7. Sector macro drivers for operating businesses (illustrative sectors)
 
 ### 7.1 Energy
 - **Oil and fuels:** Brent moves Petrobras pricing policy, diesel and gasoline costs and Brazil's IPCA. A Brent 52-week range of about $91–126 makes hedging policy a key decision [19][20].
@@ -174,7 +176,7 @@ WEEKLY MACRO BRIEF — week ending <date>   Analyst agent: <name>   Confidence: 
 - The Macro agent owns the Weekly Macro Brief and the scenario table. The Risk agent consumes the signposts as alert triggers.
 - Re-verify every snapshot number against the primary source before it enters a recommendation. Several 2026 figures have conflicting secondary reports.
 - Treat Brazil's fiscal credibility (the Trabuco agenda and the 2027 budget) and US inflation/Fed hikes as the two highest-impact macro variables for the next six months.
-- Link every macro view to the energy and hospitality P&L drivers (FX, oil, tariffs, rates, tourist flows).
+- Link every macro view to the operating businesses' P&L drivers (in the energy and hospitality examples: FX, oil, tariffs, rates, tourist flows).
 - Keep a forecast log with Brier scoring. Do not issue point forecasts without ranges.
 
 ## Open questions and assumptions

@@ -1,12 +1,14 @@
 # Regulation and Tax (Brazil and USA)
 
-> **Purpose:** Give the AI Family Office a dated, cited map of the rules that govern (a) the office itself and (b) how the principal's investments and businesses are taxed in Brazil, the USA and across the border. **Primary users:** the Tax and Structuring agent, the Legal/Regulatory agent, the Wealth and Succession agent, the Portfolio/Investment agent (for after-tax returns), the Operating Businesses agent (hospitality and energy), and the Regulatory Monitoring agent.
+> **Purpose:** Give the AI Family Office a dated, cited map of the rules that govern (a) the office itself and (b) how the principal's investments and businesses are taxed in Brazil, the USA and across the border. **Primary users:** the Tax and Structuring agent, the Legal/Regulatory agent, the Wealth and Succession agent, the Portfolio/Investment agent (for after-tax returns), the Operating Businesses agent, and the Regulatory Monitoring agent.
+
+> **Privacy edit (rev02, 2026-11-28):** the "principal" in this file is a **fictional example investor**: a Brazil-resident investor with US assets who owns operating businesses. Hospitality and energy are used only as illustrative sectors. No real person's data is in this public repository. Content is otherwise unchanged from the previous revision.
 
 > **IMPORTANT: This is research, not legal or tax advice.** It summarizes public sources as of 2026-11-28. Rules in both countries changed heavily in 2023–2026, and several are still being regulated or challenged in court. Before acting, the principal must confirm every point with licensed Brazilian professionals (a tax lawyer and a contador) and licensed US professionals (a US tax attorney and/or CPA). Items marked **Unverified:** could not be confirmed against a source during this research. Items marked **Assumption:** are working hypotheses.
 
-## Revision log (rev01, 2026-11-28)
+## Revision log (rev01 verification pass, 2026-11-28; carried into rev02)
 
-This revision re-checked every **Unverified** item in rev00 (`10-regulation-and-tax_rev00.md`, kept unchanged). Sources [50]–[84] are new. Outcome per item:
+rev01 re-checked every **Unverified** item in rev00 (rev00 and rev01 were removed from the public repo in the rev02 privacy edit; they remain in git history). Sources [50]–[84] are new. Outcome per item:
 
 | # | Item (rev00) | rev01 status | What changed |
 |---|---|---|---|
@@ -50,7 +52,7 @@ This revision re-checked every **Unverified** item in rev00 (`10-regulation-and-
 - **The consumption tax reform is live.** CBS/IBS test rates (0.9% + 0.1%) apply in 2026 with no actual payment for compliant taxpayers; CBS replaces PIS/Cofins from 2027; ICMS/ISS phase out 2029–2032; full system in 2033 [15]. The TCU proposed a 2027 CBS reference rate of about 11.3%; the Senate must set it by 15 Dec 2026 [68]. Hotels get a specific regime with a 40% rate reduction but buyers cannot take credits [16].
 - **Inheritance tax is rising.** Complementary Law 227/2026 (January 2026) makes progressive ITCMD rates mandatory in all states, uses market value as the base, sets rules for foreign estates and trusts, and excludes VGBL/PGBL from ITCMD [18][19][20].
 - **US exposure as a non-resident:** 30% withholding on US dividends (there is no US–Brazil income tax treaty [50]), portfolio interest is exempt, most capital gains are not taxed, but **US estate tax applies to US-situs assets above US$60,000** [38][39][40][41][75].
-- **If the principal becomes a US tax resident,** they are taxed on worldwide income [79], must file FBAR/Form 8938, and face punitive PFIC rules on Brazilian funds [45]. F-1 student days are generally excluded from the substantial presence test for up to 5 calendar years [43][44].
+- **If the principal becomes a US tax resident,** they are taxed on worldwide income [79], must file FBAR/Form 8938, and face punitive PFIC rules on Brazilian funds [45]. Days in student status (F, J, M or Q visas) are generally excluded from the substantial presence test for up to 5 calendar years [43][44].
 - **Monitoring is mandatory:** PL 2338/2023 (Brazil's AI bill) was still awaiting the rapporteur's report in the Chamber's special committee in November 2026 [58][59]. State ITCMD laws, the CBS/IBS reference rates and PL 5.473/2025 (which adjusts Law 15.270's credit deadline for non-residents) are all moving [19][68][81].
 
 ---
@@ -73,7 +75,7 @@ Recent change: in January 2026 the CVM's Investment Products Superintendence pub
 
 **Uncertainty flags (treat as risk triggers):**
 - Sharing recommendations with family members who are separate taxpayers, business partners, employees, or investors in the operating companies.
-- Running the office through a company that charges a fee to related companies (e.g., a holding billing the hotel or energy company for "investment advisory").
+- Running the office through a company that charges a fee to related companies (e.g., a holding billing an operating company for "investment advisory").
 - Publishing research outputs (could look like analyst activity under Resolution 20).
 - Giving the system discretion to trade a portfolio owned by someone other than the principal (could look like portfolio management under Resolution 21).
 
@@ -82,7 +84,7 @@ Recent change: in January 2026 the CVM's Investment Products Superintendence pub
 ### A.2 Brazil: data protection (LGPD)
 
 The **LGPD** (Lei Geral de Proteção de Dados, Law 13.709/2018) governs how personal data is processed [26].
-- **Personal-use exemption:** the LGPD does not apply to processing "by a natural person for exclusively private and non-economic purposes" (art. 4, I) [26]. A tool used only by the principal for personal wealth decisions may fit, but the exemption is narrow: once the system processes data of **employees, hotel guests, counterparties or family members** in connection with the businesses, the processing is economic and the LGPD applies.
+- **Personal-use exemption:** the LGPD does not apply to processing "by a natural person for exclusively private and non-economic purposes" (art. 4, I) [26]. A tool used only by the principal for personal wealth decisions may fit, but the exemption is narrow: once the system processes data of **employees, customers, counterparties or family members** in connection with the businesses, the processing is economic and the LGPD applies.
 - **Sensitive and financial data:** financial data is not a "sensitive" category under the LGPD, but it is protected by bank secrecy rules and is high-risk in practice. **Assumption:** apply LGPD-grade controls anyway (access control, encryption, logging, a written record of processing).
 - **Sanctions:** the ANPD (the data protection authority) can impose fines of up to 2% of a company's or group's revenue in Brazil in the prior year, net of taxes, capped at R$50 million per infraction (art. 52, II) [26][61].
 - **International transfers:** storing data on US cloud servers is an international transfer that needs a legal basis under the LGPD's transfer chapter. ANPD Resolution CD/ANPD 19/2024 approved standard contractual clauses; the 12-month grace period to adopt them ended on 23 August 2025, so contracts relying on them must now include the approved text unchanged [62]. **Assumption:** check that the cloud and AI vendors' data-processing terms include these clauses or another valid basis.
@@ -121,7 +123,7 @@ A qualifying office avoids registration and most of the Act's substantive rules 
 
 ### A.6 USA: state privacy laws
 
-- **Florida Digital Bill of Rights** (effective 2024-07-01) applies to controllers with **over US$1 billion** global revenue plus another test (e.g., 50%+ revenue from online ads, or an app store with 250,000+ apps); processors are covered regardless of size [37]. It will almost certainly not apply to the principal's office. **Assumption:** other comprehensive state laws (e.g., California) have revenue or data-volume thresholds the office will not meet; vendors used by the office may be covered.
+- **Example: Florida Digital Bill of Rights** (effective 2024-07-01) applies to controllers with **over US$1 billion** global revenue plus another test (e.g., 50%+ revenue from online ads, or an app store with 250,000+ apps); processors are covered regardless of size [37]. A law like this will almost certainly not apply to a private family office. **Assumption:** other comprehensive state laws (e.g., California) have revenue or data-volume thresholds the office will not meet; vendors used by the office may be covered.
 
 ---
 
@@ -189,7 +191,7 @@ Constitutional Amendment 132/2023 and Complementary Law 214/2025 replace PIS, Co
 
 **Rate:** on 28 October 2026 the TCU (Federal Court of Accounts) approved a proposed **CBS reference rate of about 11.3% for 2027** (reported as 11.3%–11.35%), above the 9.21% the IBS Management Committee (CGIBS) had been using since July. The Senate must set the rate by resolution by **15 December 2026**; if it does not, the TCU's calculation prevails. The Receita Federal says the figure applies to 2027 only, with a review for 2028 [68]. The IBS reference rate is not yet set; CGIBS projections of 18.7% for IBS and about 27.91% combined are estimates, not law [69]. The 8.8% CBS figure in rev00 [49] is superseded. **Assumption:** the combined CBS+IBS rate is likely to exceed the earlier 26.5%–28% range if the TCU figure stands.
 
-**Hospitality (hotels, restaurants):**
+**Example sector: hospitality (hotels, restaurants):**
 - Hotels, amusement parks and theme parks: specific regime (LC 214, arts. 277–283), **40% reduction** in CBS/IBS rates, tax base is the value of the service, and **business customers cannot take credits** on hotel services [16].
 - Bars and restaurants: specific regime (arts. 273–276), 40% reduction for food prepared on site and non-alcoholic drinks; business buyers cannot take credits [16].
 - Travel agencies: same rate as hotels, but customers can credit tax on the intermediation (per secondary sources) [16].
@@ -267,7 +269,7 @@ An **NRA** is a non-US-citizen who does not have a green card and does not meet 
 
 A person becomes a US resident for tax purposes by holding a **green card** or by meeting the **substantial presence test**: at least 31 days in the current year and 183 "weighted" days over three years (current-year days + 1/3 of last year's + 1/6 of the year before) [43].
 
-**Student exception:** days in F, J, M or Q student status are excluded ("exempt individual") unless the person has been exempt as a student or similar for any part of more than 5 calendar years; Form 8843 must be filed to claim the exclusion [44]. **Assumption:** the principal is in F-1 status; their five-year clock should be tracked.
+**Student exception:** days in F, J, M or Q student status are excluded ("exempt individual") unless the person has been exempt as a student or similar for any part of more than 5 calendar years; Form 8843 must be filed to claim the exclusion [44]. **Assumption:** if the principal ever holds student status, the five-year clock should be tracked.
 
 Once resident:
 
@@ -317,7 +319,7 @@ Once resident:
 | FINRA | Oversight report, AI notices | finra.org [35] | Quarterly |
 | IRS / Treasury | Forms 706-NA, 8938, 8621; treaty table; NRA guidance | irs.gov [38][45] | Quarterly; Jan–Apr |
 | FinCEN | FBAR, beneficial ownership (CTA) rules | fincen.gov | Quarterly |
-| Florida | Privacy, any state tax changes | flsenate.gov | Semiannual |
+| US state of any US residence or assets | Privacy, any state tax changes | That state's legislature site | Semiannual |
 
 ### D.2 Change-impact template
 
@@ -331,7 +333,7 @@ Status: proposed / approved / published / in force / suspended / litigated
 Effective date(s):
 Plain-language summary (3 lines):
 What it affects: [ ] AI office regulation [ ] personal investments
-  [ ] holdings/succession [ ] hospitality business [ ] energy business
+  [ ] holdings/succession [ ] operating businesses
   [ ] US assets [ ] US residency planning [ ] reporting
 Estimated impact: amount (R$/US$), direction (+/-), confidence (H/M/L)
 Deadline for action:
@@ -349,16 +351,16 @@ Reviewed by licensed professional? (Y/N, name, date)
 1. **Keep the office private.** The Legal/Regulatory agent should block any feature that sends recommendations to anyone other than the principal until counsel confirms CVM and SEC positions.
 2. **Model after-tax returns with 2026 rules.** The Portfolio agent should apply: regressive table, exemptions (LCI/LCA/CRI/CRA/incentivized debentures/qualifying FIIs, which are also outside the IRPF-M base), 15% annual on foreign income, 10% dividend withholding above R$50k/month per paying company, the IRPF-M (0–10%) with the 34% cap, and IOF of 1.1% on remittances for investment.
 3. **Run a US-situs estate check every quarter.** Flag when US-situs assets held directly exceed US$60,000.
-4. **Track US residency days.** Maintain a day counter and the F-1 five-year clock; warn before any green card or extended stay decision.
+4. **Track US residency days.** Maintain a US day counter and, if student status applies, the five-year exempt-individual clock; warn before any green card or extended stay decision.
 5. **Review any US LLC** in light of COSIT 56/2026 before using it for investments.
 6. **Plan succession under LC 227.** Model ITCMD at progressive rates on market value, by state, and compare holding vs. VGBL vs. trust.
-7. **Model CBS/IBS for the hotels** (40% reduction, no credit for corporate guests) and for the energy business (IS on extraction, fuels single-phase), with 2027 as the first real cash year.
+7. **Model CBS/IBS for the operating businesses**, e.g., a hotel (40% reduction, no credit for corporate guests) or an energy business (IS on extraction, fuels single-phase), with 2027 as the first real cash year.
 8. **Calendar:** CBE (Feb–Apr), DIRPF (by May), come-cotas (May/Nov), FBAR/8938 if US resident (April), Senate reference rate (Dec 2026).
 9. **Every output must carry the disclaimer** and list which licensed professional must review it.
 
 ## Open questions and assumptions
 
-- **Assumption:** the principal is a Brazilian tax resident, a US NRA in F-1 status, and has not been exempt as a student for more than 5 calendar years.
+- **Assumption:** the principal is a Brazilian tax resident, and a US non-resident alien (NRA) who does not meet the substantial presence test.
 - **Open:** when the Chamber votes PL 2338/2023 (no date as of Nov 2026), and whether the new Chamber restarts the process in 2027.
 - **Open:** outcome of PL 5.473/2025 after December 2025; outcome of litigation over the 31 Dec 2025 approval deadline under Law 15.270.
 - **Open:** final CBS (Senate, by 15 Dec 2026) and IBS reference rates; confirmation of the electricity rules from the consolidated LC 214 text.
