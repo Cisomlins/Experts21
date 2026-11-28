@@ -32,6 +32,8 @@
 
 **Team design:** [expert-roster_rev01.md](expert-roster_rev01.md) lists the 22 agents that run the office (A01–A22, adding an Operating Businesses Analyst to file 04's 21) and the 8 experts needed to build it (B01–B08). Each has a one-line job, a priority, the docs it must read and its decision rights. It also defines 28 shared skills with a skill-by-agent mapping; 16 of them cover the 6-agent MVP.
 
+**Using the team:** [how-to-talk-to-your-experts_rev00.md](how-to-talk-to-your-experts_rev00.md) shows how to ask one expert or the whole team, with four example prompts and a real test run of the orchestrator.
+
 ## Points that apply across files
 
 1. **The principal's US tax status changes the advice.** As a Brazilian tax resident who is a US non-resident alien, US estate tax applies above US$60k of US-situs assets and dividends are withheld at 30%. If the principal becomes a US tax resident (green card or the substantial-presence test), worldwide income, FBAR/FATCA and PFIC rules apply. Files 02, 05, 06, 07 and 10 all flag this. It needs a professional answer before the tax agents are built.
